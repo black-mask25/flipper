@@ -1114,6 +1114,7 @@ Function,+,furi_event_flag_set,uint32_t,"FuriEventFlag*, uint32_t"
 Function,+,furi_event_flag_wait,uint32_t,"FuriEventFlag*, uint32_t, uint32_t, uint32_t"
 Function,+,furi_event_loop_alloc,FuriEventLoop*,
 Function,+,furi_event_loop_free,void,FuriEventLoop*
+Function,+,furi_event_loop_is_subscribed,_Bool,"FuriEventLoop*, FuriEventLoopObject*"
 Function,+,furi_event_loop_pend_callback,void,"FuriEventLoop*, FuriEventLoopPendingCallback, void*"
 Function,+,furi_event_loop_run,void,FuriEventLoop*
 Function,+,furi_event_loop_stop,void,FuriEventLoop*
@@ -2685,6 +2686,7 @@ Function,+,text_input_get_validator_callback_context,void*,TextInput*
 Function,+,text_input_get_view,View*,TextInput*
 Function,+,text_input_reset,void,TextInput*
 Function,+,text_input_set_header_text,void,"TextInput*, const char*"
+Function,+,text_input_set_minimum_length,void,"TextInput*, size_t"
 Function,+,text_input_set_result_callback,void,"TextInput*, TextInputCallback, void*, char*, size_t, _Bool"
 Function,+,text_input_set_validator,void,"TextInput*, TextInputValidatorCallback, void*"
 Function,-,tgamma,double,double
@@ -2759,6 +2761,7 @@ Function,+,view_allocate_model,void,"View*, ViewModelType, size_t"
 Function,+,view_commit_model,void,"View*, _Bool"
 Function,+,view_dispatcher_add_view,void,"ViewDispatcher*, uint32_t, View*"
 Function,+,view_dispatcher_alloc,ViewDispatcher*,
+Function,+,view_dispatcher_alloc_ex,ViewDispatcher*,FuriEventLoop*
 Function,+,view_dispatcher_attach_to_gui,void,"ViewDispatcher*, Gui*, ViewDispatcherType"
 Function,+,view_dispatcher_enable_queue,void,ViewDispatcher*
 Function,+,view_dispatcher_free,void,ViewDispatcher*
